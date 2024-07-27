@@ -1,109 +1,120 @@
-/* Reset some default styles */
-body, h1, p {
+/* Correctly defined ruleset with properties */
+* {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "poppins","sans-serif";
+}
+.wrapper{
+    width: 420px;
+    background: blue;
+    color: #fff;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    width:100px;
+    height: 50px;
+    background: salmon;
+    margin: 30px 0;
+    
+
 }
 
-/* Basic styling for the body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:none;
+    outline:none;
+    border: 2px solid rgba(255, 255, 2555.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box i {
+    position: absolute;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+body{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #333;
-}
+    min-height: 100vh;
+    background: seashell;
 
-/* Styling for the wrapper */
-.wrapper {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    padding: 20px;
 }
+.input-box{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    top: 50%;
+    transform:translateY(-50%);
+    font-size: 20px;
 
-/* Styling for the form elements */
-form {
-    display: flex;
-    flex-direction: column;
 }
-
-/* Styling for input fields */
-.input-box {
-    margin-bottom: 15px;
-}
-
-.input-box input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-/* Styling for the 'remember me' section */
-.remember-forgot {
+.wrapper .remember-forgot{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
 }
 
-.remember-forgot label {
-    font-size: 14px;
-}
-
-.remember-forgot a {
-    font-size: 14px;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.remember-forgot a:hover {
-    text-decoration: underline;
-}
-
-/* Styling for the submit button */
-.btn {
-    background-color: #007BFF;
+.remember-forgot a{
     color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Styling for the register link */
-.register-link {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.register-link p {
-    font-size: 14px;
-}
-
-.register-link a {
-    color: #007BFF;
     text-decoration: none;
 }
-
-.register-link a:hover {
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forgot a::hover{
     text-decoration: underline;
 }
-
-/* Styling for the heading */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
+.wrapper .btn{
+    width: 100%;
+    height:45px;
+    background: #fff;
+    border:none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
     color: #333;
+    font-weight: 600;
 }
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.bx bxs-lock-alt{
+
+}
+.bx bxs-user{
+
+}
+
+
+ 
